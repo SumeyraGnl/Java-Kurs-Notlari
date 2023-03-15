@@ -1,0 +1,53 @@
+package day19_arrayLists;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class C03_add {
+    public static void main(String[] args) {
+
+        /*
+        add ; list' e deger eklemek icin kullanilir
+
+        List data turu olarak primitive kabul etmez.(Wrapper classdan faydalanacagiz)
+        Eger bir list'e baska bir list eklemek istersek addAll kullaniriz
+         */
+
+        List<Integer> sayilar = new ArrayList<>();
+
+        sayilar.add(3);
+        sayilar.add(5);
+        sayilar.add(2);
+
+        System.out.println(sayilar);  // [3, 5, 2]
+
+        // 3ile 5 arasina element olarak 7 ekleyin
+
+        sayilar.add(1,7);
+        System.out.println(sayilar);  // [3, 7, 5, 2]
+
+        List<Integer> ekler = new ArrayList<>();
+
+        ekler.add(4);
+        ekler.add(6);
+
+        System.out.println(ekler);  // [4, 6]
+
+        sayilar.addAll(ekler);   //===========> sayılar list'ine ekler list'ini addAll ile ekledik
+        System.out.println(sayilar);  // [3, 7, 5, 2, 4, 6]
+
+        // 7 ile 5 arasina ekler'i ekleyin
+
+        sayilar.addAll(2,ekler);
+        System.out.println(sayilar);  // [3, 7, 4, 6, 5, 2, 4, 6]
+
+
+
+
+
+
+
+        }
+
+    }
+
