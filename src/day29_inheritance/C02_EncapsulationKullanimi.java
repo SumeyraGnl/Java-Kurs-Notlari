@@ -9,11 +9,16 @@ public class C02_EncapsulationKullanimi {
         System.out.println(obj.isim);  // read
 
         obj.setSayi(40);  // write
-        System.out.println(obj.getSayi());  // read
+        System.out.println(obj.getSayi());  // 40  read
 
         /*
             bir class uyesinin public olmasi ile
-            privite yapilip
+            private yapilip, getter ve setter method'larinin olusturulmasi
+            islevsel acidan ayni sonucu olusturur
+
+            Bazi developer'lar set(write) ve get(read) yetkilerinin
+            kullanildigini vurgulamak icin
+            2.yontemi tercih ederler.
          */
     }
 }

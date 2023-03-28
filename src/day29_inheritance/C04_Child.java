@@ -30,6 +30,25 @@ public class C04_Child extends C03_ParentClass{
             obj4.m="l";
             obj4.method1(); // child class method1
 
+            // C04 class'ini C03'e child yapinca
+            // child class'da olmayip, parent class'da olan
+            // b, t ve method2 ozellik olarak objC04'e eklendi
+            obj4.b=8;
+            obj4.t="y";
+            obj4.method2();// Parent Method2 calisti
+
+              /*
+
+               Java'da parent class'lar child edinmez
+               child class'lar parent edinir
+
+               Bir class'in baska bir class'daki TUM OZELLIKLERI
+               otomatik olarak edinmesini istiyorsak
+               class'imizi extends keyword ile o class'a child yapariz
+               (Size baba diyebilir miyim // sizi parent yaptim)
+
+               */
+
 
 
 
