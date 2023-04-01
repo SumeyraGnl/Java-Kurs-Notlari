@@ -12,9 +12,9 @@ public class C03_EnUzunElementiYazdir {
                esitlik koymalıyız.[if (arr[i].length()>=enUzunKelime.length())]
                 */
 
-        String[] arr= {"Merve","Betül","Zahide","Sümeyra","Said"};
+        String[] arr= {"Melike", "Burkay","inci","Eda","Emre","Ali"};
 
-        enUzunEnKisaYazdir(arr);  // Sümeyra , Said
+        enUzunEnKisaYazdir(arr);
 
     }
 
