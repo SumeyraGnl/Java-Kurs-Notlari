@@ -26,5 +26,23 @@ public class C02_LinkedList {
 
         harfler.set(3,"R");
         System.out.println(harfler);
+
+        List<String> semboller = new LinkedList<>();
+
+        semboller.add("*");
+        semboller.add("B");
+        semboller.add("%");
+        semboller.add("&");;
+
+        System.out.println(semboller);//[*, B, %, &]   -  [H, K, M, R, L, B]
+        System.out.println(harfler.retainAll(semboller)); // true ==>ortak eleman var old.icin true doner.
+        System.out.println(semboller); // [*, B, %, &]
+        System.out.println(harfler);  // [B] ==>ortak elemani yazdirir geriye kalani siler
+        harfler.addAll(semboller);
+        System.out.println(harfler); // [B, *, B, %, &]   semboller -->[*, B, %, &]
+        System.out.println(harfler.removeAll(semboller));  // true ==> harfler'de sembolleri sil.tek tek kontrol eder siler
+        System.out.println(harfler); // []
+
+
     }
 }
